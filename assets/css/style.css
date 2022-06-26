@@ -1,16 +1,10 @@
-/**
-* Template Name: Medilab - v4.7.1
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Hind",sans-serif;
-  color: #444444;
+  color: #302525;
   background-color: #e4ebf2
 }
 
@@ -27,6 +21,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   /* font-family: "Raleway", 'Times New Roman', Times, serif; */
   font-family: "Hind",sans-serif;
+  color: black;
 }
 
 /*--------------------------------------------------------------
@@ -123,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #topbar .contact-info a {
   line-height: 1;
-  color: #444444;
+  color: #010101;
   transition: 0.3s;
 }
 #topbar .contact-info a:hover {
@@ -418,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #6581BF;
 }
 #hero .container {
-  position: relative;
+  position: absolute;
 }
 #hero h1 {
   margin: 0;
@@ -428,11 +423,15 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2px 2px #030303;
+  text-align: center;
 }
 #hero h2 {
   color: #000000;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+
 }
 #hero .btn-get-started {
   font-family: "Raleway", 'Times New Roman', Times, serif;
@@ -455,6 +454,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 992px) {
@@ -462,12 +464,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: -65px;
     height: 70vh;
     margin-top: 45px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
   }
   #hero .container {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
   #hero h1 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
   #hero h2 {
@@ -631,6 +637,18 @@ section {
   width: 100%;
   height: 340px;
 }
+@media (max-width: 992px) {
+  .why-us .icon-boxes .icon-box{
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+    height: 250px;
+  }
+}
+
 .why-us .icon-boxes .icon-box i {
   font-size: 40px;
   color: #061993;
