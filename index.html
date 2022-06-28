@@ -42,6 +42,28 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+
+  <title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/crYtsQrqwc1itk5w/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 </head>
 
 <body oncontextmenu="return false">
@@ -164,7 +186,7 @@
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <form id="myForm" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
@@ -188,20 +210,20 @@
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select">
+              <select name="location" id="department" class="form-select">
                 <option value="">Select Location</option>
-                <option value="Department 1">RAJGURUNAGAR</option>
-                <option value="Department 2">CHAKAN</option>
-                <option value="Department 3">MOSHI</option>
+                <option value="RAJGURUNAGAR">RAJGURUNAGAR</option>
+                <option value="CHAKAN">CHAKAN</option>
+                <option value="CHAKAN">MOSHI</option>
               </select>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select">
+              <select name="way to contact" id="doctor" class="form-select">
                 <option value="">Way to contact</option>
-                <option value="Doctor 1">Phone</option>
-                <option value="Doctor 2">Whats-app</option>
-                <option value="Doctor 3">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="Whats-app">Whats-app</option>
+                <option value="Email">Email</option>
               </select>
               <div class="validate"></div>
             </div>
@@ -216,12 +238,33 @@
             <div class="error-message"></div>
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Make an Appointment</button></div>
+          <div class="text-center"><button  onclick='SubForm()' type="submit">Make an Appointment</button></div>
         </form>
 
       </div>
     </section>
     <!-- End Appointment Section -->
+    <!-- <form id="myForm">
+      <label>Name</label>
+      <input name="Name" />
+      <br/>
+      <label>Phone</label>
+      <input name="Phone" />
+      <br/>
+      <label>Date</label>
+      <input name="Date" />
+      <br/>
+      <label>Location</label>
+      <input name="Location" />
+      <br/>
+      <label>Way To Contact</label>
+      <input name="Way To Contact" />
+      <br/>
+      <label>Message</label>
+      <input name="Message" />
+      <br/>
+    </form>
+    <button onclick='SubForm()'>Submit</button> -->
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
