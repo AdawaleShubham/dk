@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,9 +41,9 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-
-
-  <title>Save Web Form Data to Spreadsheets</title>
+  
+  
+  <title>APPOINTMENT</title>
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -52,7 +51,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/crYtsQrqwc1itk5w/",
+				url:"https://api.apispreadsheets.com/data/BWVli0IsvyCaVTFJ/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -64,6 +63,26 @@
 			});
 		}
 	</script>
+
+  <title>CONTACT</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm2 () {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/sI6cUoj8QAE0U0MN/",
+        type: "post",
+        data: $("#myForm2").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
+
 </head>
 
 <body oncontextmenu="return false">
@@ -123,7 +142,7 @@
     <div class="container">
       <h1>DR.OMKAR KAJALE</h1>
       <h2>MBBS, DTCD , AFIH , CCEBDM <br> CHEST PHYSICIAN AND INTERVENTIONAL PULMONOLOGIST</h2>
-        <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
+      <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
     </div>
 
   </section>
@@ -189,7 +208,7 @@
         <form id="myForm" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+              <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
                 data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
@@ -198,19 +217,19 @@
                   <div class="validate"></div>
                 </div> -->
             <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+              <input type="tel" class="form-control" name="Phone" id="phone" placeholder="Your Phone"
                 data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 form-group mt-3">
-              <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date"
+              <input type="date" name="Date" class="form-control datepicker" id="date" placeholder="Appointment Date"
                 data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3">
-              <select name="location" id="department" class="form-select">
+              <select name="Location" id="department" class="form-select">
                 <option value="">Select Location</option>
                 <option value="RAJGURUNAGAR">RAJGURUNAGAR</option>
                 <option value="CHAKAN">CHAKAN</option>
@@ -219,7 +238,7 @@
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3">
-              <select name="way to contact" id="doctor" class="form-select">
+              <select name="Way to contact" id="doctor" class="form-select">
                 <option value="">Way to contact</option>
                 <option value="Phone">Phone</option>
                 <option value="Whats-app">Whats-app</option>
@@ -230,41 +249,19 @@
           </div>
 
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <textarea class="form-control" name="Message" rows="5" placeholder="Message (Optional)"></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
             <div class="loading">Loading</div>
-            <div class="error-message"></div>
+            <!-- <div class="error-message"></div> -->
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
-          <div class="text-center"><button  onclick='SubForm()' type="submit">Make an Appointment</button></div>
+          <div class="text-center"><button onclick='SubForm()' type="submit" href="/">Make an Appointment</button></div>
         </form>
 
       </div>
     </section>
-    <!-- End Appointment Section -->
-    <!-- <form id="myForm">
-      <label>Name</label>
-      <input name="Name" />
-      <br/>
-      <label>Phone</label>
-      <input name="Phone" />
-      <br/>
-      <label>Date</label>
-      <input name="Date" />
-      <br/>
-      <label>Location</label>
-      <input name="Location" />
-      <br/>
-      <label>Way To Contact</label>
-      <input name="Way To Contact" />
-      <br/>
-      <label>Message</label>
-      <input name="Message" />
-      <br/>
-    </form>
-    <button onclick='SubForm()'>Submit</button> -->
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
@@ -755,33 +752,34 @@
           <!-- form -->
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="./forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="myForm2" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
-              <div>
-                <div class="form-group mt-6">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="number" name="Phone" class="form-control" id="phone" placeholder="Your Phone" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+                  <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
               </div>
 
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
+              <button onclick='SubForm2 ()' class="text-center">Submit</button>
             </form>
 
           </div>
