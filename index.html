@@ -41,47 +41,50 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-  
-  
+
+  <script src="index.js"></script>
+
   <title>APPOINTMENT</title>
-	<script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/BWVli0IsvyCaVTFJ/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/BWVli0IsvyCaVTFJ/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Appointment subimitted successfully")
+        },
+        error: function () {
+          alert("Enter correct values !")
+        }
+      });
+    }
+  </script>
 
   <title>CONTACT</title>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script>
-    function SubForm2 () {
+    function SubForm2() {
       $.ajax({
         url: "https://api.apispreadsheets.com/data/sI6cUoj8QAE0U0MN/",
         type: "post",
         data: $("#myForm2").serializeArray(),
         success: function () {
-          alert("Form Data Submitted :)")
+          alert("Submitted !")
         },
         error: function () {
-          alert("There was an error :(")
+          alert("Enter correct values !")
         }
       });
+      form.reset();
     }
   </script>
+
+
+
 
 </head>
 
@@ -770,7 +773,8 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
+                <textarea id="message" class="form-control" name="Message" rows="5" placeholder="Message"
+                  required></textarea>
               </div>
 
               <div class="my-3">
@@ -778,9 +782,11 @@
                 <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
-              <button onclick='SubForm2 ()' class="text-center">Submit</button>
+              <div class="text-center" ><button href="/" onclick='SubForm2 ()' type="submit" id="btn-2">Send Message</button>
+              </div>
+              <script src="index.js"></script>
             </form>
+     
 
           </div>
 
