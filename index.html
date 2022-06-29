@@ -82,6 +82,25 @@
     }
   </script>
 
+  <title>Newsletter Form</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm3() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/1DqNsidFQglG7bFf/",
+        type: "post",
+        data: $("#myForm3").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
+
   <script type="text/javascript">
     function resetContact() {
       document.getElementById("myForm2").reset();
@@ -89,8 +108,10 @@
     function resetAppointment() {
       document.getElementById("myForm").reset();
     }
+    function resetNewsletter() {
+      document.getElementById("myForm3").reset();
+    }
   </script>
-
 
 
 
@@ -855,8 +876,9 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>FOR HEALTH TIPS AND UPDATES.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form id="myForm3" class="php-email-form">
+              <input type="email" name="Email" id="Email"><input onclick="SubForm3 () ; resetNewsletter()" type="submit"
+                value="Subscribe">
             </form>
           </div>
 

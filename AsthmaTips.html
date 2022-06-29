@@ -30,6 +30,81 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <title>APPOINTMENT</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/BWVli0IsvyCaVTFJ/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Appointment subimitted successfully")
+        },
+        error: function () {
+          alert("Enter correct values !")
+        }
+      });
+    }
+  </script>
+
+  <title>CONTACT</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm2() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/sI6cUoj8QAE0U0MN/",
+        type: "post",
+        data: $("#myForm2").serializeArray(),
+        success: function () {
+          alert("Submitted !")
+        },
+        error: function () {
+          alert("Enter correct values !")
+        }
+      });
+    }
+  </script>
+
+  <title>Newsletter Form</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm3() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/1DqNsidFQglG7bFf/",
+        type: "post",
+        data: $("#myForm3").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
+
+  <script type="text/javascript">
+    function resetContact() {
+      document.getElementById("myForm2").reset();
+    }
+    function resetAppointment() {
+      document.getElementById("myForm").reset();
+    }
+    function resetNewsletter() {
+      document.getElementById("myForm3").reset();
+    }
+  </script>
+
+
+
+
+
 </head>
 
 <body>
@@ -265,70 +340,69 @@
   <!-- End Services Section -->
 
   <!-- ======= Appointment Section ======= -->
-  <section id="appointment" class="appointment section-bg">
+   <!-- ======= Appointment Section ======= -->
+   <section id="appointment" class="appointment section-bg">
     <div class="container">
 
       <div class="section-title">
-        <h2>Make an Appointment</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <h2>MAKE AN APPOINTMENT</h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
       </div>
 
-      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <form id="myForm" class="php-email-form">
         <div class="row">
-          <div class="col-md-4 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+          <div class="col-md-6 form-group">
+            <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
               data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
-          <div class="col-md-4 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
-              data-msg="Please enter a valid email">
-            <div class="validate"></div>
-          </div>
-          <div class="col-md-4 form-group mt-3 mt-md-0">
-            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4"
-              data-msg="Please enter at least 4 chars">
+          <!-- <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div> -->
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="tel" class="form-control" name="Phone" id="phone" placeholder="Your Phone"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 form-group mt-3">
-            <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date"
+            <input type="date" name="Date" class="form-control datepicker" id="date" placeholder="Appointment Date"
               data-rule="minlen:4" data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group mt-3">
-            <select name="department" id="department" class="form-select">
-              <option value="">Select Department</option>
-              <option value="Department 1">Department 1</option>
-              <option value="Department 2">Department 2</option>
-              <option value="Department 3">Department 3</option>
+            <select name="Location" id="department" class="form-select">
+              <option value="">Select Location</option>
+              <option value="RAJGURUNAGAR">RAJGURUNAGAR</option>
+              <option value="CHAKAN">CHAKAN</option>
+              <option value="CHAKAN">MOSHI</option>
             </select>
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group mt-3">
-            <select name="doctor" id="doctor" class="form-select">
-              <option value="">Select Doctor</option>
-              <option value="Doctor 1">Doctor 1</option>
-              <option value="Doctor 2">Doctor 2</option>
-              <option value="Doctor 3">Doctor 3</option>
+            <select name="Way to contact" id="doctor" class="form-select">
+              <option value="">Way to contact</option>
+              <option value="Phone">Phone</option>
+              <option value="Whats-app">Whats-app</option>
+              <option value="Email">Email</option>
             </select>
             <div class="validate"></div>
           </div>
         </div>
 
         <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+          <textarea class="form-control" name="Message" rows="5" placeholder="Message (Optional)"></textarea>
           <div class="validate"></div>
         </div>
         <div class="mb-3">
           <div class="loading">Loading</div>
-          <div class="error-message"></div>
+          <!-- <div class="error-message"></div> -->
           <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit">Make an Appointment</button></div>
+        <div class="text-center"><button onclick='SubForm() ; resetAppointment()' type="submit" href="/">Make an
+            Appointment</button></div>
       </form>
 
     </div>
@@ -366,8 +440,6 @@
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
               <p><a href="mailto:info@dromkarkajale.com">info@dromkarkajale.com</a></p>
-
-              <!-- <p>info@dromkarkajale.com</p> -->
             </div>
 
             <div class="phone">
@@ -379,31 +451,43 @@
           </div>
 
         </div>
-
+        <!-- form -->
         <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form id="myForm2" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="number" name="Phone" class="form-control" id="phone" placeholder="Your Phone" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <textarea id="message" class="form-control" name="Message" rows="5" placeholder="Message"
+                required></textarea>
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
+
             <div class="my-3">
               <div class="loading">Loading</div>
-              <div class="error-message"></div>
+              <!-- <div class="error-message"></div> -->
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center" onClick="form.reset()"><button href="#" onclick="SubForm2 () ; resetContact()"
+                type="submit" id="submit">Send
+                Message</button>
+            </div>
+            <!-- <script src="index.js">SubForm2 (); </script> -->
           </form>
+          <script src="index.js"></script>
 
         </div>
 
@@ -415,70 +499,73 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+<!-- ======= Footer ======= -->
+<footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>DR. OMKAR KAJALE</h3>
-            <p>
-             Bajarpeth , Near Janta Bakery <br>
-              Rajgurunagar, Tal-Khed<br>
-              Dist-Maharashtra , 410505 <br><br>
-              <strong>Phone:</strong><p><a href="tel:+919665914363" class="call_float " target="_blank">+919665914363</a></h4>
-<br>
-              <strong>Email:</strong><p><a href="mailto:info@dromkarkajale.com">info@dromkarkajale.com</a></p> <br>
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>DR. OMKAR KAJALE</h3>
+          <p>
+            Bajarpeth , Near Janta Bakery <br>
+            Rajgurunagar, Tal-Khed<br>
+            Dist-Maharashtra , 410505 <br><br>
+          </p>
+        </div>
 
-            </p>
-          </div>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#hero">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#departments">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#departments">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Times</h4>
-            <ul>
-              <li>9:30 AM TO 7:30 PM</li>
-              <li>MONDAY-SUNDAY</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>FOR HEALTH TIPS AND UPDATES.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Times</h4>
+          <p>9:30 AM TO 7:30 PM <br> MONDAY-SUNDAY</h4>
+            <br><br>
+            <strong>Phone:</strong>
+          <p><a href="tel:+919665914363" class="call_float " target="_blank">+919665914363</a><br>
+            <strong>Email:</strong>
+          <p><a href="mailto:info@dromkarkajale.com">info@dromkarkajale.com</a></p> <br>
 
         </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>FOR HEALTH TIPS AND UPDATES.</p>
+          <form id="myForm3" class="php-email-form">
+            <input type="email" name="Email" id="Email"><input onclick="SubForm3 () ; resetNewsletter()" type="submit"
+              value="Subscribe">
+          </form>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <div class="container d-md-flex py-4">
+  <div class="container d-md-flex py-4">
 
-  
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <!-- <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>odd creatives and management</span></strong>. All Rights Reserved
       </div>
+    </div> -->
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
     </div>
-  </footer>
-  <!-- End Footer -->
+  </div>
+</footer><!-- End Footer -->
 
   <!-- Informative Page -->
 
