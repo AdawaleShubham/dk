@@ -79,7 +79,15 @@
           alert("Enter correct values !")
         }
       });
-      form.reset();
+    }
+  </script>
+
+  <script type="text/javascript">
+    function resetContact() {
+      document.getElementById("myForm2").reset();
+    }
+    function resetAppointment() {
+      document.getElementById("myForm").reset();
     }
   </script>
 
@@ -88,7 +96,7 @@
 
 </head>
 
-<body oncontextmenu="return false">
+<body>
 
   <!---for call and whatsapp button-->
   <!-- <a href="tel:+919665914363" class="call_float " target="_blank"><i class="fa fa-phone call-icon"></i></a>
@@ -144,7 +152,11 @@
     </div>
     <div class="container">
       <h1>DR.OMKAR KAJALE</h1>
-      <h2>MBBS, DTCD , AFIH , CCEBDM <br> CHEST PHYSICIAN AND INTERVENTIONAL PULMONOLOGIST</h2>
+      <h2>MBBS ( DR. D. Y. PATIL MEDICAL COLLEGE , PIMPRI) <br> DTCD , AFIH , CCEBDM <br> CHEST PHYSICIAN AND
+        INTERVENTIONAL PULMONOLOGIST</h2>
+      <h2> COLLEGE OF PHYSICIANS AND SURGEONS OF MUMBAI
+        SPECIALIZATION – PULMONARY MEDICINE
+      </h2>
       <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
     </div>
 
@@ -260,7 +272,8 @@
             <!-- <div class="error-message"></div> -->
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
-          <div class="text-center"><button onclick='SubForm()' type="submit" href="/">Make an Appointment</button></div>
+          <div class="text-center"><button onclick='SubForm() ; resetAppointment()' type="submit" href="/">Make an
+              Appointment</button></div>
         </form>
 
       </div>
@@ -782,11 +795,13 @@
                 <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center" ><button href="/" onclick='SubForm2 ()' type="submit" id="btn-2">Send Message</button>
+              <div class="text-center" onClick="form.reset()"><button href="#" onclick="SubForm2 () ; resetContact()"
+                  type="submit" id="submit">Send
+                  Message</button>
               </div>
-              <script src="index.js"></script>
+              <!-- <script src="index.js">SubForm2 (); </script> -->
             </form>
-     
+            <script src="index.js"></script>
 
           </div>
 
