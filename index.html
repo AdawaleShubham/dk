@@ -95,7 +95,7 @@
           alert("Subscribed ! ")
         },
         error: function () {
-          alert("There was an error :(")
+          alert("Enter correct values !")
         }
       });
     }
@@ -816,8 +816,8 @@
                 <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center" onClick="form.reset()"><button href="#" onclick="SubForm2 () ; resetContact()"
-                  type="submit" id="submit">Send
+              <div class="text-center"><button href="#" onclick="SubForm2 () ; resetContact()" type="submit"
+                  id="submit">Send
                   Message</button>
               </div>
               <!-- <script src="index.js">SubForm2 (); </script> -->
@@ -876,7 +876,7 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>FOR HEALTH TIPS AND UPDATES.</p>
-            <form id="myForm3" class="php-email-form">
+            <form id="myForm3" method="post" class="php-email-form">
               <input type="email" name="Email" id="Email"><input onclick="SubForm3 () ; resetNewsletter()" type="submit"
                 value="Subscribe">
             </form>
