@@ -83,23 +83,25 @@
   </script>
 
   <title>Newsletter Form</title>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script>
-    function SubForm3() {
-      $.ajax({
-        url: "https://api.apispreadsheets.com/data/1DqNsidFQglG7bFf/",
-        type: "post",
-        data: $("#myForm3").serializeArray(),
-        success: function () {
-          alert("Subscribed ! ")
-        },
-        error: function () {
-          alert("Enter correct values !")
-        }
-      });
-    }
-  </script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm3 (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/UPk2MI8sbcgSBlLR/",
+				type:"post",
+				data:$("#myForm3").serializeArray(),
+				success: function(){
+					alert("Subscribed Successfully")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 
   <script type="text/javascript">
     function resetContact() {
