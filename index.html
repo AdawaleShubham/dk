@@ -44,79 +44,6 @@
 
   <script src="index.js"></script>
 
-  <title>APPOINTMENT</title>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script>
-    function SubForm() {
-      $.ajax({
-        url: "https://api.apispreadsheets.com/data/BWVli0IsvyCaVTFJ/",
-        type: "post",
-        data: $("#myForm").serializeArray(),
-        success: function () {
-          alert("Appointment subimitted successfully")
-        },
-        error: function () {
-          alert("Enter correct values !")
-        }
-      });
-    }
-  </script>
-
-  <title>CONTACT</title>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script>
-    function SubForm2() {
-      $.ajax({
-        url: "https://api.apispreadsheets.com/data/sI6cUoj8QAE0U0MN/",
-        type: "post",
-        data: $("#myForm2").serializeArray(),
-        success: function () {
-          alert("Submitted !")
-        },
-        error: function () {
-          alert("Enter correct values !")
-        }
-      });
-    }
-  </script>
-
-  <title>Newsletter Form</title>
-	<script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script>
-		function SubForm3 (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/UPk2MI8sbcgSBlLR/",
-				type:"post",
-				data:$("#myForm3").serializeArray(),
-				success: function(){
-					alert("Subscribed Successfully")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
-
-  <script type="text/javascript">
-    function resetContact() {
-      document.getElementById("myForm2").reset();
-    }
-    function resetAppointment() {
-      document.getElementById("myForm").reset();
-    }
-    function resetNewsletter() {
-      document.getElementById("myForm3").reset();
-    }
-  </script>
-
-
-
 </head>
 
 <body>
@@ -243,7 +170,7 @@
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <form id="myForm" class="php-email-form">
+        <form id="myForm1" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
@@ -295,7 +222,7 @@
             <!-- <div class="error-message"></div> -->
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
-          <div class="text-center"><button onclick='SubForm() ; resetAppointment()' type="submit" href="/">Make an
+          <div class="text-center"><button onclick='SubForm1 () ; resetAppointment()' type="submit" href="/">Make an
               Appointment</button></div>
         </form>
 
@@ -921,6 +848,84 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+
+  <!-- Spreadsheet  -->
+  <!-- adawale8334@gmail.com mail is used for spredsheets -->
+  
+  <title>Appointment</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm1() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/IpoBwghKl7KWLj8n/",
+        type: "post",
+        data: $("#myForm1").serializeArray(),
+        success: function () {
+          alert("Appointment Submitted Successfully !")
+        },
+        error: function () {
+          alert("Enter Correct Values")
+        }
+      });
+    }
+  </script>
+
+  <title>CONTACT US</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm2() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/YF3ybuWhQ2t9Xbkp/",
+        type: "post",
+        data: $("#myForm2").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted ")
+        },
+        error: function () {
+          alert("Enter Correct Values")
+        }
+      });
+    }
+  </script>
+
+  <title>NEWSLETTER SUBSCRIBER</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm3() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/1guqxqrvVzMLxaRj/",
+        type: "post",
+        data: $("#myForm3").serializeArray(),
+        success: function () {
+          alert("SUBSCRIBED SUCCESSFULLY !")
+        },
+        error: function () {
+          alert("ENTER CORRECT VALUES !")
+        }
+      });
+    }
+  </script>
+
+  <script type="text/javascript">
+    function resetContact() {
+      document.getElementById("myForm2").reset();
+    }
+    function resetAppointment() {
+      document.getElementById("myForm1").reset();
+    }
+    function resetNewsletter() {
+      document.getElementById("myForm3").reset();
+    }
+  </script>
+
+
 </body>
 
 </html>
+
+
+
