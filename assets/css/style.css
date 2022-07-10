@@ -624,7 +624,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #061993;
+  background: rgb(20 69 123);
   border-radius: 4px;
   color: #fff;
 }
@@ -1069,7 +1069,7 @@ font-family: 'Nunito', sans-serif;
   color: #2c4964;
 }
 .departments .details p {
-  color: #777777;
+  color: #000000;
 }
 .departments .details p:last-child {
   margin-bottom: 0;
@@ -1326,8 +1326,8 @@ font-family: 'Nunito', sans-serif;
 --------------------------------------------------------------*/
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 3px solid #e4ebf2;
+  border-bottom: 3px solid #e4ebf2;
 }
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
