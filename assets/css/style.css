@@ -623,7 +623,7 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .content {
-  padding: 30px;
+  padding:10px;
   background: rgb(20 69 123);
   border-radius: 4px;
   color: #fff;
@@ -1598,7 +1598,9 @@ font-family: 'Nunito', sans-serif;
 .img-fluid {
   max-width: 100%;
   height: auto;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  margin-top: 45px;
+  display: flex;
 }
 /* 8888888888888888 */
 
