@@ -87,7 +87,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #061993;
+  background: #0b62c3;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -192,7 +192,7 @@ font-family: 'Nunito', sans-serif;
 */
 .appointment-btn {
   margin-left: 25px;
-  background: #061993;
+  background: #0b62c3;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -457,11 +457,11 @@ font-family: 'Nunito', sans-serif;
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #061993;
+  background: #0b62c3;
   margin-left: 10vh;
 }
 #hero .btn-get-started:hover {
-  background: #061993;
+  background: #0b62c3;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -473,7 +473,7 @@ font-family: 'Nunito', sans-serif;
 }
 @media (max-width: 992px) {
   #hero {
-    margin-bottom: -65px;
+    margin-bottom: -100px;
     height: 70vh;
     margin-top: 45px;
     display: flex;
@@ -507,7 +507,7 @@ font-family: 'Nunito', sans-serif;
 }
 @media (max-height: 600px) {
   #hero {
-    height: 50vh;
+    height: 73vh;
   }
 }
 
@@ -540,7 +540,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #061993;
+  color: #0b62c3;
 }
 .section-title h2::before {
   content: "";
@@ -558,7 +558,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #061993;
+  background: #0b62c3;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -648,7 +648,7 @@ section {
   font-size: 14px;
 }
 .why-us .content .more-btn:hover {
-  color: #061993;
+  color: #0b62c3;
   background: #fff;
 }
 .why-us .icon-boxes .icon-box {
@@ -674,7 +674,7 @@ section {
 
 .why-us .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #061993;
+  color: #0b62c3;
   margin-bottom: 30px;
 }
 .why-us .icon-boxes .icon-box h4 {
@@ -859,7 +859,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #061993;
+  background: #0b62c3;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -895,7 +895,7 @@ font-family: 'Nunito', sans-serif;
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #061993;
+  background: #0b62c3;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -934,17 +934,17 @@ font-family: 'Nunito', sans-serif;
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  background: #061993;
-  border-color: #061993;
+  background: #0b62c3;
+  border-color: #0b62c3;
 }
 .services .icon-box:hover .icon {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #061993;
+  color: #0b62c3;
 }
 .services .icon-box:hover .icon::before {
-  background: #061993;
+  background: #0b62c3;
 }
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
@@ -1010,7 +1010,7 @@ font-family: 'Nunito', sans-serif;
   padding: 10px !important;
 }
 .appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
-  border-color: #061993;
+  border-color: #0b62c3;
 }
 .appointment .php-email-form input, .appointment .php-email-form select {
   height: 44px;
@@ -1019,7 +1019,7 @@ font-family: 'Nunito', sans-serif;
   padding: 10px 12px;
 }
 .appointment .php-email-form button[type=submit] {
-  background: #061993;
+  background: #0b62c3;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1027,7 +1027,7 @@ font-family: 'Nunito', sans-serif;
   border-radius: 50px;
 }
 .appointment .php-email-form button[type=submit]:hover {
-  background: #061993;
+  background: #0b62c3;
 }
 
 /*--------------------------------------------------------------
@@ -1043,19 +1043,19 @@ font-family: 'Nunito', sans-serif;
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: #061993;
+  color: #0b62c3;
   border-radius: 0;
   border-right: 2px solid #ebf1f6;
   font-weight: 600;
   font-size: 15px;
 }
 .departments .nav-link:hover {
-  color: #061993;
+  color: #0b62c3;
 }
 .departments .nav-link.active {
   color: #ffffff;
-  background-color: #061993;
-  border-color: #061993;
+  background-color: #0b62c3;
+  border-color: #0b62c3;
   padding-left: 12px;
 }
 .departments .tab-pane.active {
@@ -1081,7 +1081,7 @@ font-family: 'Nunito', sans-serif;
   }
   .departments .nav-link.active {
     color: #fff;
-    background: #061993;
+    background: #0b62c3;
   }
 }
 
@@ -1160,7 +1160,7 @@ font-family: 'Nunito', sans-serif;
   margin: 0 2px;
 }
 .doctors .member .social a:hover {
-  background: #061993;
+  background: #0b62c3;
 }
 .doctors .member .social a + a {
   margin-left: 8px;
@@ -1221,7 +1221,7 @@ font-family: 'Nunito', sans-serif;
   color: #343a40;
 }
 .faq .faq-list a.collapsed:hover {
-  color: #061993;
+  color: #0b62c3;
 }
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
@@ -1299,10 +1299,10 @@ font-family: 'Nunito', sans-serif;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #061993;
+  border: 1px solid #0b62c3;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #061993;
+  background-color: #0b62c3;
 }
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
@@ -1345,7 +1345,7 @@ font-family: 'Nunito', sans-serif;
 }
 .contact .info i {
   font-size: 20px;
-  color: #061993;
+  color: #0b62c3;
   float: left;
   width: 44px;
   height: 44px;
@@ -1373,7 +1373,7 @@ font-family: 'Nunito', sans-serif;
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #061993;
+  background: #0b62c3;
   color: #fff;
 }
 .contact .php-email-form {
@@ -1432,7 +1432,7 @@ font-family: 'Nunito', sans-serif;
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #061993;
+  background: #0b62c3;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1561,7 +1561,7 @@ font-family: 'Nunito', sans-serif;
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #061993;
+  background: #0b62c3;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1577,7 +1577,7 @@ font-family: 'Nunito', sans-serif;
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #061993;
+  background: #0b62c3;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1630,7 +1630,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 .phone {
-  background: #152a76;
+  background: #e4ebf2;
   color: white;
 }
 
