@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/HOSPI.png" rel="icon">
-  <link href="assets/img/hero-bg.jpg" rel="apple-touch-icon">
+  <link href="img/hospital-xxl.png" rel="icon">
+  <link href="img/hospital-xxl.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -114,12 +114,12 @@
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">info@dromkarkajale.com</a>
-        <i class="bi bi-phone"></i><a href="tel:+919665914363" class="call_float " target="_blank">+919665914363</a>
+        <i class="bi bi-phone"></i><a href="tel:+919545953370" class="call_float " target="_blank">+919545953370</a>
       </div>
 
       <div>
-        <a href="https://api.whatsapp.com/send?phone=+919665914363&text=Hello this is the starting message">Whatsapp
-          Chat</a>
+        <!-- <a href="https://api.whatsapp.com/send?phone=+919665914363&text=Hello this is the starting message">Whatsapp
+          Chat</a> -->
       </div>
       <!-- <div class="d-none d-lg-flex social-links align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -131,7 +131,7 @@
   </div>
 
   <!-- ======= Header ======= -->
-  <header id="header"   class="fixed-top">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <h4 class="logo me-auto"><a href="/"> सर्वे सन्तु निरामयाः</a></h4>
@@ -142,16 +142,17 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="/">HOME</a></li>
-          <li><a class="nav-link scrollto" href="/">SERVICES</a></li>
-          <li><a class="nav-link scrollto" href="/">GALLERY</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/">SERVICES</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="/">GALLERY</a></li> -->
           <!-- <li><a class="nav-link scrollto" href="#departments">Departments</a></li> -->
           <!-- <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li> -->
-          <li class="dropdown"><a href="#"><span>WE CARE FOR YOU</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>WE CARE FOR YOU</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="./AsthmaTips.html">ASTHAMA TIPS</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+          <li><a class="nav-link scrollto" href="#our-times">OUR-TIMES</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -339,9 +340,9 @@
   </section>
   <!-- End Services Section -->
 
+
   <!-- ======= Appointment Section ======= -->
-   <!-- ======= Appointment Section ======= -->
-   <section id="appointment" class="appointment section-bg">
+  <section id="appointment" class="appointment section-bg">
     <div class="container">
 
       <div class="section-title">
@@ -349,7 +350,7 @@
         <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
       </div>
 
-      <form id="myForm" class="php-email-form">
+      <form id="myForm1" class="php-email-form">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
@@ -357,19 +358,20 @@
             <div class="validate"></div>
           </div>
           <!-- <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                <div class="validate"></div>
-              </div> -->
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div> -->
           <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="tel" class="form-control" name="Phone" id="phone" placeholder="Your Phone"
-              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <input type="tel" class="form-control" name="Phone" id="phone" placeholder="Your Phone" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 form-group mt-3">
-            <input type="date" name="Date" class="form-control datepicker" id="date" placeholder="Appointment Date"
-              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <!-- <h6 text-center>Appointment Date</h5> -->
+            <input name="Date" class="form-control datepicker" id="date" placeholder="MM/DD/YYYY"
+              onfocus="(this.type='date')" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group mt-3">
@@ -377,7 +379,7 @@
               <option value="">Select Location</option>
               <option value="RAJGURUNAGAR">RAJGURUNAGAR</option>
               <option value="CHAKAN">CHAKAN</option>
-              <option value="CHAKAN">MOSHI</option>
+              <!-- <option value="CHAKAN">MOSHI</option> -->
             </select>
             <div class="validate"></div>
           </div>
@@ -401,13 +403,13 @@
           <!-- <div class="error-message"></div> -->
           <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
         </div>
-        <div class="text-center"><button onclick='SubForm() ; resetAppointment()' type="submit" href="/">Make an
+        <div class="text-center"><button onclick='SubForm1 () ; resetAppointment()' type="submit" href="/">Make an
             Appointment</button></div>
       </form>
 
     </div>
   </section>
-  <!-- End Appointment Section -->
+
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
@@ -497,8 +499,58 @@
   </section>
   <!-- End Contact Section -->
 
-  </main><!-- End #main -->
 
+  <!-- ====== ADDRESS ======= -->
+  <section id="our-times" class="why-us">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="content">
+            <!-- <h3>Why Choose Us?</h3> -->
+            <div class="pic"><img src="assets/img/New folder/profile.jpg" class="img-fluid" alt=""></div>
+
+          </div>
+        </div>
+        <div class="col-lg-8 d-flex align-items-stretch">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-clinic"></i>
+                  <h4>RAJGURUNAGAR</h4>
+                  <p style="color:black">Bajarpeth , Near Janta Bakery
+                    Rajgurunagar, Tal-Khed
+                    Dist-Pune , 410505
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-clinic"></i>
+                  <h4>CHAKAN</h4>
+                  <p style="color:black">Sankalp Polyclinic, Above Sankalp Medical, Ambethan Chowk, Tal-khed,
+                    Dist-Pune , 410501</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch  time-info">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bi-watch"></i>
+                  <!-- <h4>TIME</h4> -->
+                  <p style="color:black"> RAJGURUNAGAR - 9:30 AM to 2:30 PM <br> MONDAY-SUNDAY</h4>
+                  <p style="color:black"> CHAKAN - 5 PM to 8:30 PM <br> MONDAY-SUNDAY</h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div><!-- End .content-->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Why Us Section -->
+
+  </main><!-- End #main -->
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -508,11 +560,11 @@
 
           <div class="col-lg-3 col-md-6 footer-contact text-white">
             <h3 class="text-white">DR. OMKAR KAJALE</h3>
-            <p class="text-white">
-              Bajarpeth , Near Janta Bakery <br>
-              Rajgurunagar, Tal-Khed<br>
-              Dist-Maharashtra , 410505 <br><br>
-            </p>
+            <p> <strong class="text-white">Phone : </strong><a class="text-white" href="tel:+919665914363"
+                class="call_float " target="_blank"> +9195459533703</a><br>
+
+            <p> <strong class="text-white">Email : </strong><a class="text-white" href="mailto:info@dromkarkajale.com">
+                info@dromkarkajale.com</a></p>
           </div>
 
           <!-- <div class="col-lg-2 col-md-6 footer-links">
@@ -528,12 +580,13 @@
 
           <div class="col-lg-3 col-md-6 footer-links ">
             <h4 class="text-white">Our Times</h4>
-            <p class="text-white">9:30 AM TO 7:30 PM <br> MONDAY-SUNDAY</h4>
+            <p class="text-white"> Rajgurunagar - 9:30 AM to 2:30 PM <br> MONDAY-SUNDAY</h4>
+            <p class="text-white"> Chakan - 5 PM to 8:30 PM <br> MONDAY-SUNDAY</h4>
+
+
               <br>
-              <p > <strong class="text-white">Phone  :  </strong><a class="text-white" href="tel:+919665914363" class="call_float " target="_blank"> +919665914363</a><br>
-             
-                <p> <strong class="text-white">Email  :  </strong><a class="text-white" href="mailto:info@dromkarkajale.com"> info@dromkarkajale.com</a></p> <br>
-    
+              <br>
+
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
